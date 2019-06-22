@@ -1,7 +1,7 @@
-package com.backend.controller;
+package com.backend.Angular_Main.controller;
 
-import com.backend.dao.ProfileDataDao;
-import com.backend.model.ProfileData;
+import com.backend.Angular_Main.dao.ProfileDataDao;
+import com.backend.Angular_Main.model.ProfileData;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

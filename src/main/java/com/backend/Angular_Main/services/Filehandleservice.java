@@ -1,11 +1,11 @@
-package com.backend.services;
+package com.backend.Angular_Main.services;
 
 
-import com.backend.controller.ProfileDataController;
-import com.backend.dao.FileHandleDao;
-import com.backend.dao.ProfileDataDao;
-import com.backend.model.FileEntity;
-import com.backend.model.ProfileData;
+import com.backend.Angular_Main.controller.ProfileDataController;
+import com.backend.Angular_Main.dao.FileHandleDao;
+import com.backend.Angular_Main.dao.ProfileDataDao;
+import com.backend.Angular_Main.model.FileEntity;
+import com.backend.Angular_Main.model.ProfileData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -100,6 +100,7 @@ public class Filehandleservice {
     public List<ProfileData> getAllProfile(){
         return profileDataController.getAllProfiles();
     }
+
     @GetMapping(value = "api/getData")
     public Optional<FileEntity> getFiles() {
         FileEntity entity;
