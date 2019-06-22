@@ -1,6 +1,6 @@
-package com.backend.dao;
+package com.backend.Angular_Main.dao;
 
-import com.backend.model.ProfileData;
+import com.backend.Angular_Main.model.ProfileData;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 

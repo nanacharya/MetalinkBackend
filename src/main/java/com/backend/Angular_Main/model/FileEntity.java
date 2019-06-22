@@ -1,4 +1,4 @@
-package com.backend.model;
+package com.backend.Angular_Main.model;
 
 
 import javax.persistence.Entity;
