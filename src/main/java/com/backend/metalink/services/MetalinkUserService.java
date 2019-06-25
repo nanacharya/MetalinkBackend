@@ -19,16 +19,25 @@ public class MetalinkUserService {
 
     @Autowired
     private MetalinkUserController metalinkUserController;
-
-    @PostMapping(value = "/addUser")
+//
+//    @PostMapping(value = "/addUser")
+//    public Response testing(@RequestBody MetaLinkUser user) {
+//        System.out.println(user.getFirstname());
+//        metalinkUserController.addUser(user);
+//        return Response.status(Response.Status.OK).build();
+//    }
+//
+//    @GetMapping(value = "/getAllUser")
+//    public List<MetaLinkUser> getAllUser(){
+//        return metalinkUserController.getAllUser();
+//    }
+	
+	//userAddOrDelete
+	
+	  @PostMapping(value = "/userAddOrDelete")
     public Response testing(@RequestBody MetaLinkUser user) {
         System.out.println(user.getFirstname());
         metalinkUserController.addUser(user);
         return Response.status(Response.Status.OK).build();
-    }
-
-    @GetMapping(value = "/getAllUser")
-    public List<MetaLinkUser> getAllUser(){
-        return metalinkUserController.getAllUser();
     }
 }

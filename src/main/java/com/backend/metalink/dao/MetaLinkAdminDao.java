@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface MetaLinkAdminDao extends CrudRepository<MetaLinkAdmin, Integer> {
 
-    List<MetaLinkAdmin> findByPasswordAndUsername(String password, String Name);
+    MetaLinkAdmin findByPasswordAndUsername(String password, String Name);
 }
