@@ -42,4 +42,12 @@ public class MetalinkUserController {
     }
 
 
+    public MetaLinkUser updatePassword(int userId, String newPassWord, String oldPassWord) {
+        MetaLinkUser user = dao.findById(userId).get();
+        if (user.getPassword().equals(oldPassWord)) {
+            user.setPassword(newPassWord);
+            dao.save(user);
+        }
+        return user;
+    }
 }

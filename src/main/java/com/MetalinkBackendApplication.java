@@ -17,11 +17,6 @@ public class MetalinkBackendApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("This is inside the runner ......");
-//		MetaLinkAdminController controller = new MetaLinkAdminController();
-//		MetaLinkAdmin admin = new MetaLinkAdmin();
-//		admin.setUsername("test");
-//		admin.setPassword("test");
-//		controller.setDummyUser(admin);
 
 	}
 }
